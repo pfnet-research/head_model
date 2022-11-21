@@ -1,0 +1,9 @@
+chainer==4.4.0
+cuda==9.0
+cudnn==7.1
+tables==3.4.4
+numpy==1.15
+scikit-learn==0.20
+scipy==1.1
+xgboost==0.72.1
+cupy-cuda90==4.4.0

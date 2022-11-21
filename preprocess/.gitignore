@@ -1,0 +1,11 @@
+.*
+!.gitignore
+*~
+\#*
+out/
+__pycache__/
+*.pyc
+*egg-info/
+results
+tmp/
+mlruns/

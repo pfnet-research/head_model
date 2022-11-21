@@ -1,0 +1,7 @@
+chainer
+tables
+numpy
+scikit-learn
+scipy
+xgboost
+cupy-cuda111
