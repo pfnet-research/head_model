@@ -2,8 +2,8 @@
 
 n_features=$1
 in_file=$2  # path to GSE211692_RAW.tar
-working_dir=$3
-out_dir=$4
+out_dir=$3
+working_dir=$4
 mapping_file=$5  # path to mapping_file.txt
 
 if [ ! -f ${in_file} ]; then
