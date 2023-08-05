@@ -18,7 +18,6 @@ if [ ! -d ${result_dir} ]; then
     mkdir -p ${result_dir}
 fi
 
-cp run_full_local.sh ${result_dir}/
 for i in 0 1 2 3 4
 do
     python3 full.py \
