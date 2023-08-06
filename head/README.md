@@ -81,3 +81,10 @@ Arguments
 
 Output
 This script outputs prediction results as `<result_dir>/submission.txt`. The `i`-th line of `submission.txt` represents the prediction result of the `i`-th test instance.
+
+
+#### Example
+
+```
+bash run_full.sh 0 preprocessed_dir work_dir result_dir
+```

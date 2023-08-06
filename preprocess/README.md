@@ -62,7 +62,8 @@ Here, the second-level directory names (`0`--`4`) are the split indices of the d
 ### Example
 
 ```
-bash run_preprocess.sh 10 GSE211692_RAW.tar work out mapping_file.txt
+bash run_preprocess.sh -1 GSE211692_RAW.tar work_dir preprocessed_dir mapping_file.txt  # Use all features
+bash run_preprocess.sh 10 GSE211692_RAW.tar work_dir preprocessed_dir mapping_file.txt  # Use top-10 most important features.
 ```
 
 
