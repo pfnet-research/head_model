@@ -59,7 +59,7 @@ class DANN(nn.Module):
         self.eval()
         e = self.encode(X, z)
         y_pred = self.predictor(e)
-        return torch.softmax(self(y_pred), dim=1)
+        return torch.softmax(y_pred, dim=1)
 
 
 def get_dann(

@@ -23,7 +23,7 @@ class MLP(nn.Module):
         for linear in self.linears[:-1]:
             h = F.relu(linear(h))
             if self.dropout:
-                h = F.dropout(h)
+                h = F.dropout(h, training=self.training)
         if self.fine_tune:
             h = h.detach()
         h = self.linears[-1](h)
