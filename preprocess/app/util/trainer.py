@@ -97,6 +97,9 @@ class Trainer(nn.Module):
         z_all = []
         for batch in loader:
             X, z, y = batch
+            # _predict() below switches the model to eval mode; restore train mode for every update.
+            self.model.train()
+            optimizer.zero_grad()
             loss = self(X, z, y)
             loss.backward()
             optimizer.step()
